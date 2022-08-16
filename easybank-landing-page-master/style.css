@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Public+Sans:ital,wght@0,300;0,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans';
+}
+p {
+    color: hsl(233, 8%, 62%);
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin: 20px 0;
+}
+h1, h2, h3, h4{
+    color: hsl(233, 26%, 24%);
+}
+h4, h6{
+    margin: 10px 0;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+h4{
+    font-size: 1.3rem;
+}
+h4:hover{
+    color: hsl(192, 70%, 51%);
+}
+h6{
+    font-size: 0.8rem;
+    color:hsl(233, 8%, 62%) ;
+}
+
+.btn{
+    padding: 15px 40px;
+    border-radius: 20px;
+    color: #fff;
+    background: linear-gradient(135deg,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border: none;
+    cursor: pointer;
+}.container{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 100px ;
+}
+.nav-toggle{
+    display: none;
+}
+ul a{
+    text-decoration: none;
+    margin: 0px 5px;
+    color:hsl(233, 26%, 24%) ;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+ul a:hover{
+    border-bottom:  2px solid hsl(136, 65%, 51%);
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    background-color:  hsl(0, 0%, 98%);
+}
+main aside{
+    width: 40%;
+    padding: 150px 0;
+}
+.hero-image{
+    background-image: url(/easybank-landing-page-master/images/bg-intro-desktop.svg);
+    background-position:left;
+    background-size: cover;
+    width: 55%;
+
+    overflow: hidden;
+}
+.hero-image img{
+    width: 90%;
+    margin-top: -100px;
+}
+.easybank{
+    background-color: hsl(220, 16%, 96%);
+    padding: 50px 100px;
+}
+.about-easybank{
+    display: flex;
+    justify-content: space-between;
+}
+.about-easybank div{
+    width: 20%;
+    margin: 50px 0;
+}
+
+.ariticles-page{
+    padding: 50px 100px;
+    background-color: hsl(0, 0%, 98%);
+}
+.latest-ariticles{
+    display: flex;
+    justify-content: space-between;
+}
+.ariticles-card{
+    width: 24%;
+    background-color: #ffffff;
+    border-radius:5px;
+    overflow: hidden;
+    margin-top:30px;
+}
+.ariticles-card img{
+    width:100%;
+    height: 40%;
+}
+.article-text{
+    padding:  20px;
+}
+footer{
+    background-color:hsl(233, 26%, 24%) ;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 30px 100px;
+}
+footer p:hover{
+    color: hsl(192,70%,51%);
+    cursor: pointer;
+}
+.social-links{
+    margin-top: 50px;
+    cursor: pointer;
+}
+.social-links img{
+    margin: 0 5px;
+}
+
+.dropdown-toggle{
+    display: block;
+}
+
+
+@media screen and (max-width: 800px) {
+p{
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+h6{
+    font-size: 1rem;
+}
+.btn {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+header{
+    padding: 20px 70px;
+    align-items: center;
+}
+.navbar{
+    position: absolute;
+    top: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    width: 80%;
+    height: auto;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+.show-links{
+    display: flex;
+}
+.nav-toggle{
+    display: flex;
+}
+header .navbar a{
+    margin:20px 0px ;
+    font-weight: 900;
+    font-size: 20px;
+}
+.header-button{
+    display: none;
+}
+main{
+    flex-direction: column-reverse;
+    padding: 0;
+    padding-bottom: 50px;
+}
+.hero-image{
+    width: 100%;
+    background-image: url(/easybank-landing-page-master/images/bg-intro-mobile.svg);
+    overflow: hidden;
+}
+.hero-image img{
+    width: 100%;
+    margin-top: -100px;
+}
+main aside{
+    width: 100%;
+    padding: 25px ;
+    text-align: center;
+}
+.easybank article{
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
+.about-easybank, .latest-ariticles{
+    display: block;
+    margin-bottom: 50px;
+}
+.about-easybank div,.ariticles-card {
+    width: 100%;
+    text-align: center;
+}
+.ariticles-card {
+    width: 100%;
+    text-align: start;
+}
+footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.social-links {
+    margin-top: 30px;
+}
+.social-links img{
+    width: 30px;
+}
+}
